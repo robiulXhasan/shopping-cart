@@ -29,3 +29,11 @@ document.getElementById("phone-case-minus").addEventListener("click", function (
   setElementValue("phone-case-price", updatedPrice);
   calculateTotal(-59);
 });
+// remove phone
+document.getElementById("remove-phone").addEventListener("click", function () {
+  removeProduct("phone-cart");
+});
+// remove phone case
+document.getElementById("remove-phone-case").addEventListener("click", function () {
+  removeProduct("phone-case-cart");
+});

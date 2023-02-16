@@ -33,3 +33,9 @@ function calculateTotal(value) {
   const total = subTotal + tax;
   setElementValue("total", total);
 }
+
+// remove product
+function removeProduct(id) {
+  const product = document.getElementById(id);
+  product.style.display = "none";
+}
